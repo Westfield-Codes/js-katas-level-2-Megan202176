@@ -14,10 +14,12 @@ var myScoops="Here's your cone with: "
  * @return: none (main never gets returns
  */
 function main(){
-    let scoops="how many scoops (max 3)?"
+    let scoops= prompt("how many scoops (max 3)?")
     if (scoops<4) scoopLoop(scoops)
-    else alert("oink oink") 
+    else {
+    alert("oink oink") 
     main()
+    }
 }
 /* FUNCTION scoopLoop(scoops) 
  * start scoop at 1 and loop while scoop is less than or equal to scoops
@@ -26,9 +28,22 @@ function main(){
  * @param: scoops (integer)
  * @return: none
  */
-
+function scoopLoop(scoops){
+    let scoop=1;
+    while(scoop<=scoops){
+        myScoops+=nextScoop(scoop);
+        scoop++;
+    }
+    alert (myScoops);
+    
+}
 /* FUNCTION nextScoop(scoop)
  * initialize a variable called flavor, prompt for "Flavor for scoop number [scoop]"
  * @param: scoop (integer)
  * @return: flavor (string)
  */
+function nextScoop(scoop){
+    let flavor=prompt("Flavor for scoop number " + scoop)
+    scoop++
+    return flavor
+}
