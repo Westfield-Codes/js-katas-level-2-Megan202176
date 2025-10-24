@@ -1,69 +1,56 @@
-/* RANDOM STUDENT KATA:  */
-
-// Who will be gatekeeper and keymaster today?
-
-/* Global Variables */
-// Create an array called students, start empty. 
-// Create an array called picked, start empty. 
-var students = []
-var picked = []
-/* Function Main()
- * Set variable called count to asking how many students there are.
- * Fill global array students by passing count as an argument to addStudents
- * Set gateKeeper = randStudent(count), the name of a random student in the list
- * Set keymaster = randNewStudent(), name of a different random student
- * Display gatekeeper name and keymaster name for this kata
- * @param = none
- * @return = none
+/* FUNCTION main() 
+ * Perform basic arithmetic as a calculator
+ * @param: none (main never gets params)
+ * @return: none (main never gets returns)
  */
+ // Ask the user what operation they want (+, -, *, /)
+ // Ask the user for the first number (a)
+ // Parse a as an integer
+ // Ask the user for the second number (b)
+ // Parse b as an integer
+ // Based on the operation, send the numbers to the right function as arguments 
+ // store the returned value in variable called result
+ // Alert the equation a + operation + b = result
 function main(){
-    let count= prompt("How mant students are there?")
-    addStudents(count)
-    let gateKeeper = randStudent(count)
-    let keymaster = randNewStudent()
-    alert("Gatemaster is " + gateKeeper + " and the keymaster is " + keymaster)
+    let what=prompt("What do you want? + - * /")
+    
 }
 
 
-
-/* Function addStudents(count) 
- * Use a for loop to add student names to the students array via user input.
- * The loop should run count number of times. 
- * @param = count {integer}
- * @return = none
+/* FUNCTION add(a,b)
+ * define a function called add with two number parameters a and b
+ * @param: a, b (integers)
+ * @return: a + b
  */
-function addStudents(count){
-    for(let students=1; students<=count; students++)
+function add(a,b){
+
 
 }
-
-/* Function randStudent(count)
- * Set student = random number, 0 to length of students array.
- * Set name = element in students array at that random index.
- * Add name to picked array. 
- * Return the name of the random student
- * @param = count {integer}
- * @return = name {string}
+/* FUNCTION subtract(a,b)
+ * define a function called subtract with two number parameters a and b
+ * @param: a, b (integers)
+ * @return: a - b
  */
-function randStudent(count){
+function subtract(a,b){
 
-
+    
 }
-/* Function randNewStudent() (start with copy of randStudent)
- * Set name = "", student = 0 and pickedYet = 0. 
- * Loop while pickedYet is not equal to -1
- * Set student = random number, 0 to length of students array.
- * Set name = element in students array at that random index.
- * Set pickedYet = the index of that name the picked array. 
- * End the while loop.
- * Add name to picked array.
- * Return the name of the new random student
- * @param = none
- * @return = name {string}
+/* FUNCTION multiply(a,b)
+ * define a function called multiply with two number parameters a and b
+ * @param: a, b (integers)
+ * @return: a * b (* means multiply)
  */
-function randNewStudent(){
+function mult(a,b){
 
-
+    
 }
- 
+/* FUNCTION divide(a,b)
+ * define a function called divide with two number parameters a and b
+ * @param: a, b (integers)
+ * @return: a / b (/ means divided by)
+ */
+function divide(a,b){
+
+    
+}
 /* ************************************* */

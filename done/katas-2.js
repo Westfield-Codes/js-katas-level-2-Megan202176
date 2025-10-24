@@ -70,7 +70,7 @@ var picked=[];
 function main(){
     let count= prompt("How many students are there?");
     addStudents(count);
-    let gatekeeper = randStudent();
+    let gatekeeper = randStudent(count);
     let keymaster = randNewStudent();
     alert("The gatekeeper = "+ gatekeeper + " and the keymaster = " + keymaster);
 }
@@ -121,8 +121,37 @@ function randNewStudent(){
     while(pickedYet != -1){
         let student = Math.floor(Math.random()*students.length);
         sName = students[student]
-         pickedYet= picked.indexOf(sName);
+        pickedYet= picked.indexOf(sName);
     }
      return sName;
+}
+/* PET KATA: Feed the Dog */
+
+/* Var, Alert, Prompt, Function, Global */
+
+/* FUNCTION main()  
+ * Ask for the name of a dog (dogName)
+ * Ask how many cups of food they get each meal (cups)
+ * call feedDog with parameters dogName, cups
+ * @param: none (main never gets params)
+ * @return: none (main never gets returns
+ */
+function main(){
+    dogName=prompt("What is your dog's name?")
+    cups=prompt("How many cups of food do they get each meal?")
+    feedDog(dogName, cups)
+}
+/* FUNCTION feedDog(dogName, cups) */
+/* Define a function called feedDog with string parameter dogName, number parameter cups.
+ * Loop from cup = 1 to cups.  For each cup, display "Here's a cup of kibble, [dogName]!"
+ * @param: dogName (string), cups (integer)
+ * @return: none
+ */ 
+function feedDog(dogName, cups){
+    cup=1
+    while(cup<cups){
+        alert("Here's a cup of kibble, " + dogName)
+        cup++
+    }
 }
 /* ************************************* */
