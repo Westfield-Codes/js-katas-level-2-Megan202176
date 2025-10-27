@@ -12,8 +12,19 @@
  // store the returned value in variable called result
  // Alert the equation a + operation + b = result
 function main(){
-    let what=prompt("What do you want? + - * /")
-    
+    let operation=prompt("What do you want? + - * /")
+    let a = prompt("What will A value?")
+    let b = prompt("What will B value?")
+    b=parseInt(b)
+    a=parseInt(a)
+
+        if (operation=="+"){
+            result=add(a,b)}
+        else if (operation=="-")result=subtract(a,b)
+        else if (operation=="*")result=mult(a,b)
+        else(opertation=="/"),result=divide(a,b)
+
+    alert(a + operation + b +" = "+ result)
 }
 
 
@@ -23,7 +34,7 @@ function main(){
  * @return: a + b
  */
 function add(a,b){
-
+return a+b
 
 }
 /* FUNCTION subtract(a,b)
@@ -32,7 +43,7 @@ function add(a,b){
  * @return: a - b
  */
 function subtract(a,b){
-
+return a-b
     
 }
 /* FUNCTION multiply(a,b)
@@ -41,7 +52,7 @@ function subtract(a,b){
  * @return: a * b (* means multiply)
  */
 function mult(a,b){
-
+return a*b
     
 }
 /* FUNCTION divide(a,b)
@@ -50,7 +61,7 @@ function mult(a,b){
  * @return: a / b (/ means divided by)
  */
 function divide(a,b){
-
+return a/b
     
 }
 /* ************************************* */
