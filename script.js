@@ -22,7 +22,7 @@ function main(){
             result=add(a,b)}
         else if (operation=="-")result=subtract(a,b)
         else if (operation=="*")result=mult(a,b)
-        else(opertation=="/"),result=divide(a,b)
+        else(opertation=="/"),result=div(a,b)
 
     alert(a + operation + b +" = "+ result)
 }
@@ -35,7 +35,6 @@ function main(){
  */
 function add(a,b){
 return a+b
-
 }
 /* FUNCTION subtract(a,b)
  * define a function called subtract with two number parameters a and b
@@ -60,7 +59,7 @@ return a*b
  * @param: a, b (integers)
  * @return: a / b (/ means divided by)
  */
-function divide(a,b){
+function div(a,b){
 return a/b
     
 }
