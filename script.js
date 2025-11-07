@@ -1,11 +1,11 @@
 /* SHOPPING LIST KATA:  */
 
 // Every day, you are sent to buy 5 items. 
-
-/* 1. for loop and string concatenation */
 function main(){
-    makeList(2)
+    makeList()
 }
+/* 1. for loop and string concatenation */
+
 /* Function makeList()
  * Create a shopping list string called shoppingList as "To Buy:"
  * create a five-item loop, and in the loop, 
@@ -13,7 +13,9 @@ function main(){
  * add a line break after each item added
  * when loop's done, alert the list
  */
-
+ function makeList(){
+    let shoppingList="To Buy: \n"
+    
 /* 2. for loop and array with toString */
 
 /* Same function, using previous code, BUT:
@@ -23,13 +25,6 @@ function main(){
  * no need to add a line break after
  * at end of loop, alert the list title, followed by
  * the list with toString() method (it won't have line breaks)*/
-function makeList(items){
-    let shopArray=[]
-    for(let i=0; i<=items; i++){
-        shopArray.push(prompt("Item: " + i + " ?"))
-    }
-    alert ("shopping list" + shopArray.toString())
-} 
 
 /* 3. for loop and array with join method 
 
