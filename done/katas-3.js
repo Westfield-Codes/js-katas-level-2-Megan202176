@@ -102,7 +102,21 @@
  * Save the first alert content as message. 
  * Add total as a line below message, then alert the message. 
  */
-
+ function makeList(items){
+    let shopArray=[]
+    let itemPrice=[]
+    let entry=""
+    for(let i=0; i<=items; i++){
+        entry = prompt("Item: " + i + "item, price ?" )
+        itemPrice=entry.split(",")
+        shopArray.push(itemPrice)
+    }
+    let total=0
+    for(let i=0; i<shopArray.length; i++){
+        total+=parseInt(shopArray[i][1])
+    }
+    alert ("shopping list \n" + shopArray.join("\n") + "\n Total = "+ total)
+} 
 
 /* MULTIPLICATION FREQUENCY KATA */
 
